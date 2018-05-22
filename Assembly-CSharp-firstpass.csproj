@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{EFD21363-6A6F-76B0-CB77-300B062F9B2B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_2;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VIDEO;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT;MOBILE_INPUT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/unity5.5.2/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/unity5.5.2/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\AdmobAPI\AdPosition.cs" />
+     <Compile Include="Assets\Plugins\AdmobAPI\AdSize.cs" />
+     <Compile Include="Assets\Plugins\AdmobAPI\Admob.cs" />
+     <Compile Include="Assets\Plugins\AdmobAPI\AdmobEvent.cs" />
+     <Compile Include="Assets\Plugins\AdmobAPI\AdmobGender.cs" />
+     <Compile Include="Assets\Plugins\AdmobAPI\AdmobListenerProxy.cs" />
+     <Compile Include="Assets\Plugins\AdmobAPI\IAdmobListener.cs" />
+     <Compile Include="Assets\Plugins\AdmobAPI\MonoPInvokeCallbackAttribute.cs" />
+     <Compile Include="Assets\Plugins\Android\AppLovin\AppLovin.cs" />
+     <Compile Include="Assets\Plugins\Android\AppLovin\AppLovinEvents.cs" />
+     <Compile Include="Assets\Plugins\Heyzap\HZBannerAd.cs" />
+     <Compile Include="Assets\Plugins\Heyzap\HZDemographics.cs" />
+     <Compile Include="Assets\Plugins\Heyzap\HZIncentivizedAd.cs" />
+     <Compile Include="Assets\Plugins\Heyzap\HZInterstitialAd.cs" />
+     <Compile Include="Assets\Plugins\Heyzap\HZOfferWallAd.cs" />
+     <Compile Include="Assets\Plugins\Heyzap\HZShowOptions.cs" />
+     <Compile Include="Assets\Plugins\Heyzap\HZVideoAd.cs" />
+     <Compile Include="Assets\Plugins\Heyzap\HeyzapAds.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\Android\OpenIAB_Android.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\IOpenIAB.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\Inventory.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\JSON.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\OpenIAB.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\OpenIABEventManager.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\Options.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\OptionsVerifyMode.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\Purchase.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\SearchStrategy.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\SkuDetails.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\WP8\OpenIAB_WP8.cs" />
+     <Compile Include="Assets\Plugins\OpenIAB\iOS\OpenIAB_iOS.cs" />
+     <None Include="Assets\new cars  update\Car_24\readme.txt" />
+     <None Include="Assets\new cars  update\Car_24\Skybox\readme.txt" />
+     <None Include="Assets\RealisticCarControllerV3\Scripts\Skidmarks.shader" />
+     <None Include="Assets\new cars  update\Car_28\readme.txt" />
+     <None Include="Assets\Shipping Container Environment\Readme.txt" />
+     <None Include="Assets\mp_deception\mp_deception\mp_deception.shader" />
+     <None Include="Assets\new cars  update\Car_22\Skybox\readme.txt" />
+     <None Include="Assets\new cars  update\Car_28\Skybox\readme.txt" />
+     <None Include="Assets\Plugins\Android\ChartboostSDK\AndroidManifest.xml" />
+     <None Include="Assets\new cars  update\Car_14\Skybox\readme.txt" />
+     <None Include="Assets\new cars  update\Car_22\readme.txt" />
+     <None Include="Assets\RealisticCarControllerV3\Standard Assets\Effects\Projectors\Guidelines.txt" />
+     <None Include="Assets\Skyboxes\hw_sahara\hw_sahara.shader" />
+     <None Include="Assets\new cars  update\Car_26\Skybox\readme.txt" />
+     <None Include="Assets\new cars  update\Car_18\Skybox\readme.txt" />
+     <None Include="Assets\new cars  update\Car_16\Skybox\readme.txt" />
+     <None Include="Assets\RealisticCarControllerV3\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+     <None Include="Assets\new cars  update\Car_20\Skybox\readme.txt" />
+     <None Include="Assets\new cars  update\Car_20\readme.txt" />
+     <None Include="Assets\RealisticCarControllerV3\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+     <None Include="Assets\mp_deception\mp_deception\license.txt" />
+     <None Include="Assets\RealisticCarControllerV3\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
+     <None Include="Assets\new cars  update\Car_27\Skybox\readme.txt" />
+     <None Include="Assets\RealisticCarControllerV3\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+     <None Include="Assets\Skyboxes\hw_sahara\license.txt" />
+     <None Include="Assets\RealisticCarControllerV3\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\RealisticCarControllerV3\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+     <None Include="Assets\Skyboxes\elbrus\elbrus.shader" />
+     <None Include="Assets\Resources\StartAppData.txt" />
+     <None Include="Assets\Skyboxes\mp_blackgold\license.txt" />
+     <None Include="Assets\new cars  update\Car_26\readme.txt" />
+     <None Include="Assets\StreamingAssets\build_info.txt" />
+     <None Include="Assets\RealisticCarControllerV3\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+     <None Include="Assets\e53e7mcta7sw-oil_barrels_pbr\barrels_description.txt" />
+     <None Include="Assets\RealisticCarControllerV3\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+     <None Include="Assets\new cars  update\Car_15\Skybox\readme.txt" />
+     <None Include="Assets\Skyboxes\arrakisday\arrakisday.shader" />
+     <None Include="Assets\Plugins\Android\AppLovin\AppLovin Readme.txt" />
+     <None Include="Assets\new cars  update\Car_21\readme.txt" />
+     <None Include="Assets\RealisticCarControllerV3\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
+     <None Include="Assets\RealisticCarControllerV3\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\new cars  update\Car_21\Skybox\readme.txt" />
+     <None Include="Assets\RealisticCarControllerV3\LICENSE - Read Me!.txt" />
+     <None Include="Assets\Skyboxes\mp_blackgold\mp_blackgold.shader" />
+     <None Include="Assets\RealisticCarControllerV3\Standard Assets\Cameras\CameraGuidelines.txt" />
+     <None Include="Assets\new cars  update\Car_17\Skybox\readme.txt" />
+     <None Include="Assets\Skyboxes\elbrus\readme.txt" />
+     <None Include="Assets\RealisticCarControllerV3\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+     <None Include="Assets\RealisticCarControllerV3\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Plugins\Android\Heyzap\AndroidManifest.xml" />
+     <None Include="Assets\RealisticCarControllerV3\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+     <None Include="Assets\mp_deception\mp_deception\Deception Pass.txt" />
+     <None Include="Assets\RealisticCarControllerV3\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
+     <None Include="Assets\new cars  update\Car_19\readme.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/unity5.5.2/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/unity5.5.2/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PlaymodeTestsRunner">
+ <HintPath>C:/Program Files/unity5.5.2/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/unity5.5.2/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/unity5.5.2/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>C:/Program Files/unity5.5.2/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="OpenIAB_W8Plugin">
+ <HintPath>E:/2018 New/backup Car parking Game/Car parking Game/Assets/Plugins/OpenIAB_W8Plugin.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements.Editor">
+ <HintPath>E:/2018 New/backup Car parking Game/Car parking Game/Assets/UnityAds/UnityEngine.Advertisements.Editor.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
